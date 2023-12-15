@@ -3,7 +3,6 @@ import * as mysql from 'mysql2';
 import { AppService } from './app.service';
 import { Kupon } from './Kupon';
 import { Response } from 'express';
-import { parse } from 'path';
 
 const conn = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
